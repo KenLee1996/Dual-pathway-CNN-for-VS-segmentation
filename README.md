@@ -1,2 +1,4 @@
 # Dual-pathway-CNN-for-VS-segmentation
-Software requirment: python3.6, tensorflow==1.15, keras==2.3.1
+<p> Software platform for data pre-processing: Matlab 2019b </p>
+<p> Software platform for CNN training: python3.6, tensorflow==1.15, keras==2.3.1 </p>
+
