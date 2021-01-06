@@ -1,4 +1,4 @@
-function vol = Data_process(path,type,file)
+function Data_process(path,type,file)
 fpath=mfilename('fullpath');
 [wpath,~]=fileparts(fpath);
 cd(wpath);
@@ -41,10 +41,6 @@ fprintf('Image pre-process has done!!\n');
 %     status=system([wpath '\tensorflow\python ' wpath '\M4t1ct2t1.py -i ' path]);
 % end
 % status=system([wpath '\tensorflow\python ' wpath '\M4t1c.py -i ' path]);
-%% Volume calculation
-vol=M4_Nhybrid(path,1);
-vol=roundn(vol/1000,-4);
-fprintf('Tumor volume: %s ml\n',num2str(vol));
 % fprintf('DL model segmentation done!!\n');
 %%
 rmpath(genpath(wpath));
